@@ -2,6 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CalculatorTest {
+
     @Test
     public void testAddMethod(){
 Calculator calculator = new Calculator();
@@ -10,7 +11,7 @@ Calculator calculator = new Calculator();
     @Test
     public void testSubtractMethod(){
         Calculator calculator = new Calculator();
-        Assert.assertEquals(calculator.sustract(30.00,10.00),20.00);
+        Assert.assertEquals(calculator.subtract(30.00, 10.00), 20.00);
     }
     @Test
     public void testDivideMethod(){
