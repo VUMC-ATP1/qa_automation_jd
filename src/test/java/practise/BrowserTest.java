@@ -1,6 +1,4 @@
-package package1;
-
-
+package practise;
 import lombok.extern.log4j.Log4j;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -18,7 +16,7 @@ public class BrowserTest {
 
     ChromeDriver driver;
 
-    private final String GOOGLE_URL = "https://www.google.lv";
+    private final String GOOGLE_URL = "https://www.google.lv/";
 
     @BeforeTest
     public void setProperties() {
