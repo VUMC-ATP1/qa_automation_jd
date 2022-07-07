@@ -18,6 +18,7 @@ public class CheckoutPage {
     private final By zipOrPostalCodeField = By.xpath("//input[@id='postal-code']");
     private final By continueButton = By.id("continue");
 
+    private final By errorMessage = By.xpath("//*[@id=\"checkout_info_container\"]/div/form/div[1]/div[4]/h3");
     public WebElement getFirstNameField() {
         return driver.findElement(firstNameField);
     }
@@ -45,5 +46,9 @@ public class CheckoutPage {
     public void clickOnContinueButton() {
         element = driver.findElement(continueButton);
         element.click();
+    }
+
+    public WebElement getErrorMessage() {
+        return driver.findElement(errorMessage);
     }
 }
